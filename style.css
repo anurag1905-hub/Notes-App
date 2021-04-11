@@ -58,3 +58,70 @@ body {
     font:14px arial;
     text-align:center;
 }
+
+@media only screen and (min-width:600px){
+    #menu {
+        float:right;
+    }
+
+    .menuitem {
+        display:inline;
+    }
+
+    .menuitem + .menuitem {
+        border-left:1px solid white;
+        margin-left:8px;
+        padding-left:8px;
+    }
+
+    #menubutton {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:599px){
+    #menubutton{
+        display:inline;
+        float:right;
+    }
+
+    #menu {
+        position:absolute;
+        top:48px;
+        right:0px;
+        background:#325232;
+        padding:16px;
+    }
+
+    .shownmenu {
+        display:block;
+    }
+
+    .hiddenmenu {
+        display:none;
+    }
+
+    .menuitem{
+        display:block;
+    }
+
+    .menuitem + .menuitem {
+        margin-top:8px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
